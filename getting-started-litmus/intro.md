@@ -1,6 +1,10 @@
+<br>
+
 <h1 align="center">
   <img src="https://raw.githubusercontent.com/litmuschaos/website-litmuschaos/staging/src/images/LitmusLogo.png" alt="LitmusChaos" width="200">
 </h1>
+
+<br>
 
 ## **Getting Started with Litmus** 😮😎
 

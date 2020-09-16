@@ -1,22 +1,28 @@
-1. Verify if the chaos operator is running
+<br>
+
+## Verifying the Litmus Installation
+
+<br>
+
+**Verify if the chaos operator is running**
 
 ```bash
 kubectl get pods -n litmus
 ```
 
-**Expected Output:**
+<span style="color:green">**Expected Output:**<span>
 
 ```bash
 chaos-operator-ce-<numericId>-<id> 1/1 Running 0
 ```
 
-2. Verify if chaos CRDs are installed
+**Verify if chaos CRDs are installed**
 
 ```bash
 kubectl get crds | grep chaos
 ```
 
-**Expected Output:**
+<span style="color:green">**Expected Output:**</span>
 
 ```bash
 chaosengines.litmuschaos.io 2020-09-13T18:45:25Z
@@ -26,13 +32,13 @@ chaosexperiments.litmuschaos.io 2020-09-13T18:45:26Z
 chaosresults.litmuschaos.io 2020-09-13T18:45:26Z
 ```
 
-3. Verify if the chaos api resources are successfully created in the desired (application) namespace
+**Verify if the chaos api resources are successfully created in the desired (application) namespace**
 
 ```bash
 kubectl api-resources | grep chaos
 ```
 
-**Expected Output:**
+<span style="color:green">**Expected Output:**</span>
 
 ```bash
 chaosengines litmuschaos.io true ChaosEngine

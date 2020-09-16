@@ -2,6 +2,8 @@
 
 ## Install Chaos Experiments
 
+<br>
+
 Chaos experiments contain the actual chaos details. These experiments are installed on your cluster as Kubernetes CRs. The Chaos Experiments are grouped as Chaos Charts and are published on [Chaos Hub](https://hub.litmuschaos.com).
 
 In this scenario we are going to try one of our most popular experiments i.e `pod-delete`.
@@ -12,25 +14,27 @@ For the sake of this tutorial we are going to move forward with the `generic/pod
 
 **Experiment Details:** [https://hub.litmuschaos.io/generic/pod-delete](https://hub.litmuschaos.io/generic/pod-delete)
 
-1. Install the Chaos Experiment using the following command
+<br>
+
+**Install the Chaos Experiment using the following command**
 
 ```bash
 kubectl apply -f https://hub.litmuschaos.io/api/chaos/1.7.0?file=charts/generic/pod-delete/experiment.yaml -n nginx
 ```
 
-**Expected Output:**
+<span style="color:green">**Expected Output:**</span>
 
 ```bash
 chaosexperiment.litmuschaos.io/pod-delete created
 ```
 
-2. Verify if the chaos experiments are installed
+**Verify if the chaos experiments are installed**
 
 ```bash
 kubectl get chaosexperiments -n nginx
 ```
 
-**Expected Output:**
+<span style="color:green">**Expected Output:**</span>
 
 ```bash
 pod-delete   10s

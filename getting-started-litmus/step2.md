@@ -2,6 +2,8 @@
 
 ## Apply the LitmuChaos Operator manifest
 
+<br>
+
 ```bash
 kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v1.7.0.yaml
 ```
