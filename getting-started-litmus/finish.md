@@ -1,5 +1,22 @@
-Thank you for creating a Chaos Experiment with Litmus
+**Litmus** is a toolset to do cloud-native chaos engineering. Litmus provides tools to orchestrate chaos on Kubernetes to help developers and SREs find weaknesses in their application deployments. Litmus can be used to run chaos experiments initially in the staging environment and eventually in production to find bugs, vulnerabilities. Fixing the weaknesses leads to increased resilience of the system. Litmus adopts a “Kubernetes-native” approach to define chaos intent in a declarative manner via custom resources.
 
-[Who are we!](https://litmuschaos.io)
-[Learn more about us](https://github.com/litmuschaos/litmus)
-[Check out all our experiments](https://hub.litmuschaos.io)
+The project is under active development as a [Sandbox project with CNCF](https://www.cncf.io/sandbox-projects/). This Katacoda scenario will be updated as it evolves.
+
+### With these steps you have learned:
+
+-   &#x2714; Setup and install Litmus onto Kubernetes.
+-   &#x2714; Install Litmus experiments, RBAC and prepare the Chaos Engine.
+-   &#x2714; Deliver chaos experiments.
+-   &#x2714; Observe the chaos engine exercise your experiments.
+
+> In the last year we've seen Chaos Engineering move from a much talked-about idea to an accepted, mainstream approach to improving and assuring distributed system resilience. As organizations large and small begin to implement Chaos Engineering as an operational process, we're learning how to apply these techniques safely at scale. The approach is definitely not for everyone, and to be effective and safe, it requires organizational support at scale. -- [ThoughtWorks Radar](https://www.thoughtworks.com/radar/techniques/chaos-engineering)
+
+## References
+
+-   [Who are we!](https://litmuschaos.io)
+-   [Litmus Chaos documentation](https://docs.litmuschaos.io/docs/getstarted/)
+-   [Learn more about our Source Code](https://github.com/litmuschaos/litmus)
+-   [Principles of Chaos Engineering](http://principlesofchaos.org/)
+-   [Check out all our experiments](https://hub.litmuschaos.io)
+
+<span style="color:green"> **-- MayaData Inc**</span>

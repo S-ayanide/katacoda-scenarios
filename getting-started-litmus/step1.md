@@ -1,15 +1,17 @@
-Apply the LitmuChaos Operator manifest
+<br>
 
-```
-kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v1.7.0.yaml
-```
+## Setting up Nginx 
 
-The above command installs all the CRDs, required service account configuration, and chaos-operator.
+We are going to apply Chaos to `nginx` in this scenario. You can apply chaos to any other application but for this scenario we are going to consider `nginx` as the application that we're going to apply chaos on.
 
-Check the available namespaces and see if `litmus` is present or not
+**Let's start by creating a namespace**
 
-```
-kubectl get namespaces
+```bash
+kubectl create namespace nginx
 ```
 
-You should be able to see litmus as an active namespace that you just created.
+**Next Let's deploy the nginx app on the namespace we just created**
+
+```bash
+ kubectl create deploy nginx -n nginx --image=nginx
+```

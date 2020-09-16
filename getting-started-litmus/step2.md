@@ -1,40 +1,17 @@
-1. Verify if the chaos operator is running
+<br>
 
-```
-kubectl get pods -n litmus
-```
+## Apply the LitmuChaos Operator manifest
 
-**Expected Output:**
-```
-chaos-operator-ce-<numericId>-<id> 1/1 Running 0
+```bash
+kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v1.7.0.yaml
 ```
 
-2. Verify if chaos CRDs are installed
+The above command installs all the CRDs, required service account configuration, and chaos-operator.
 
-```
-kubectl get crds | grep chaos
-```
+Check the available namespaces and see if `litmus` is present or not
 
-**Expected Output:**
-```
-chaosengines.litmuschaos.io 2020-09-13T18:45:25Z
-
-chaosexperiments.litmuschaos.io 2020-09-13T18:45:26Z
-
-chaosresults.litmuschaos.io 2020-09-13T18:45:26Z
+```bash
+kubectl get namespaces
 ```
 
-3. Verify if the chaos api resources are successfully created in the desired (application) namespace
-
-```
-kubectl api-resources | grep chaos
-```
-
-**Expected Output:**
-```
-chaosengines litmuschaos.io true ChaosEngine
-
-chaosexperiments litmuschaos.io true ChaosExperiment
-
-chaosresults litmuschaos.io true ChaosResult
-```
+You should be able to see litmus as an active namespace that you just created.

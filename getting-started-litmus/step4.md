@@ -1,44 +1,37 @@
-# Setup Service Account
+<br>
 
-A service account should be created to allow chaosengine to run experiments in your application namespace.
+## Install Chaos Experiments
 
-1. First let's store the RBAC yaml and update its namespace to the one we are using i.e `nginx`
+Chaos experiments contain the actual chaos details. These experiments are installed on your cluster as Kubernetes CRs. The Chaos Experiments are grouped as Chaos Charts and are published on [Chaos Hub](https://hub.litmuschaos.com).
 
-```
-wget https://hub.litmuschaos.io/api/chaos/1.7.0?file=charts/generic/pod-delete/rbac.yaml
-```
+In this scenario we are going to try one of our most popular experiments i.e `pod-delete`.
 
-2. Get the exact name of the yaml file that we just downloaded and rename it to a more friendly one
+> You can deviate from this step and try out your own experiments from our list of experiments provided at Chaos Hub but we would suggest you stick with this tutorial to get a depper understanding first and later move on to try something yourself.
 
-```
-ls
-```
+For the sake of this tutorial we are going to move forward with the `generic/pod-delete` experiment from [Chaos Hub](https://hub.litmuschaos.com).
 
-Expected Output
-```
-'1.7.0?file=charts%2Fgeneric%2Fpod-delete%2Frbac.yaml'   Desktop   katacoda-finished
-```
+**Experiment Details:** [https://hub.litmuschaos.io/generic/pod-delete](https://hub.litmuschaos.io/generic/pod-delete)
 
-3. Rename it
+1. Install the Chaos Experiment using the following command
 
-```
-mv 1.7.0?file=charts%2Fgeneric%2Fpod-delete%2Frbac.yaml rbac.yaml
+```bash
+kubectl apply -f https://hub.litmuschaos.io/api/chaos/1.7.0?file=charts/generic/pod-delete/experiment.yaml -n nginx
 ```
 
-4. Open the RBAC to edit all the namepaces and replace them with `nginx`
+**Expected Output:**
 
-```
-vi rbac.yaml
-```
-
-5. Once the yaml is opened up in Vim Editor, type the following command to replace all the default namespaces with `nginx`
-
-```
-:%s/default/nginx/g
+```bash
+chaosexperiment.litmuschaos.io/pod-delete created
 ```
 
-and then save and exit
+2. Verify if the chaos experiments are installed
 
+```bash
+kubectl get chaosexperiments -n nginx
 ```
-:wq
+
+**Expected Output:**
+
+```bash
+pod-delete   10s
 ```
