@@ -36,6 +36,10 @@
 			{
 				"title": "Run Chaos",
 				"text": "step8.md"
+			},
+			{
+				"title": "Verify and Observe the results",
+				"text": "step9.md"
 			}
 		],
 		"intro": {

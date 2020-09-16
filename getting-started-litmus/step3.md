@@ -25,11 +25,11 @@ kubectl get crds | grep chaos
 <span style="color:green">**Expected Output:**</span>
 
 ```bash
-chaosengines.litmuschaos.io 2020-09-13T18:45:25Z
+chaosengines.litmuschaos.io <Creation Timestamp>
 
-chaosexperiments.litmuschaos.io 2020-09-13T18:45:26Z
+chaosexperiments.litmuschaos.io <Creation Timestamp>
 
-chaosresults.litmuschaos.io 2020-09-13T18:45:26Z
+chaosresults.litmuschaos.io <Creation Timestamp>
 ```
 
 **Verify if the chaos api resources are successfully created in the desired (application) namespace**

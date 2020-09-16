@@ -4,10 +4,13 @@ The project is under active development as a [Sandbox project with CNCF](https:/
 
 ### With these steps you have learned:
 
--   &#x2714; Setup and install Litmus onto Kubernetes.
--   &#x2714; Install Litmus experiments, RBAC and prepare the Chaos Engine.
--   &#x2714; Deliver chaos experiments.
--   &#x2714; Observe the chaos engine exercise your experiments.
+&nbsp; &nbsp; &nbsp; &nbsp; ✅ Setup and install Litmus onto Kubernetes.
+
+&nbsp; &nbsp; &nbsp; &nbsp; ✅ Install Litmus experiments, RBAC and prepare the Chaos Engine.
+
+&nbsp; &nbsp; &nbsp; &nbsp; ✅ Deliver chaos experiments.
+
+&nbsp; &nbsp; &nbsp; &nbsp; ✅ Observe the chaos engine exercise your experiments.
 
 > In the last year we've seen Chaos Engineering move from a much talked-about idea to an accepted, mainstream approach to improving and assuring distributed system resilience. As organizations large and small begin to implement Chaos Engineering as an operational process, we're learning how to apply these techniques safely at scale. The approach is definitely not for everyone, and to be effective and safe, it requires organizational support at scale. -- [ThoughtWorks Radar](https://www.thoughtworks.com/radar/techniques/chaos-engineering)
 

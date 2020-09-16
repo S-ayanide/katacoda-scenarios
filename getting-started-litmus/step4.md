@@ -37,5 +37,5 @@ kubectl get chaosexperiments -n nginx
 <span style="color:green">**Expected Output:**</span>
 
 ```bash
-pod-delete   10s
+pod-delete   <Creation Timestamp>
 ```
