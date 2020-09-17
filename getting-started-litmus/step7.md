@@ -58,7 +58,7 @@ You would be able to see that two new pods
 would be created and age would be the latest time stamp. You'd be able to see the status of the pods changing from `Running` to `ContainerCreating` to `Completed` to`Terminating` based on the chaos applied.
 
 ```bash
-kubectl get pods -w
+watch -n 1 kubectl get pods
 ```
 
 <span style="color:green">**Expected Output:**</span>
