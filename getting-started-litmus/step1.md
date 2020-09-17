@@ -9,7 +9,7 @@ We are going to apply Chaos to `nginx` in this scenario. You can apply chaos to 
 **Next Let's deploy the nginx app on the default namespace**
 
 ```bash
-kubectl create deploy nginx -n nginx --image=nginx
+kubectl create deploy nginx --image=nginx
 ```
 
 <span style="color:green">**Expected Output**</span>
