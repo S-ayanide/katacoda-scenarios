@@ -1,13 +1,31 @@
 <br>
 
-## Annotate your application
+## Prepare ChaosEngine
 
 <br>
 
-Your application has to be annotated with `litmuschaos.io/chaos="true"`. As a security measure, and also as a means to reduce blast radius the chaos operator checks for this annotation before invoking chaos experiment(s) on the application.
+ChaosEngine connects the application instance to a Chaos Experiment.
+
+**Explore the ChaosEngine yaml**
 
 ```bash
-kubectl annotate deploy/nginx litmuschaos.io/chaos="true" -n nginx
+kubectl describe https://hub.litmuschaos.io/api/chaos/1.7.0?file=charts/generic/pod-delete/engine.yaml
 ```
 
-> Replace `nginx` with the name of your deployment if you have used any other image
+You can update the values of `applabel` , `appns`, `appkind` and `experiments` as per your experiment requirements and namespaces.
+
+## Run Chaos
+
+<br>
+
+**Apply the ChaosEngine manifest to trigger the experiment.**
+
+```bash
+kubectl apply -f https://hub.litmuschaos.io/api/chaos/1.7.0?file=charts/generic/pod-delete/engine.yaml
+```
+
+<span style="color:green">**Expected Output:**</span>
+
+```bash
+chaosengine.litmuschaos.io/nginx-chaos created
+```

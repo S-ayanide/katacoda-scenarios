@@ -1,49 +1,41 @@
 <br>
 
-## Verifying the Litmus Installation
+## Install Chaos Experiments
 
 <br>
 
-**Verify if the chaos operator is running**
+Chaos experiments contain the actual chaos details. These experiments are installed on your cluster as Kubernetes CRs. The Chaos Experiments are grouped as Chaos Charts and are published on [Chaos Hub](https://hub.litmuschaos.com).
+
+In this scenario we are going to try one of our most popular experiments i.e `pod-delete`.
+
+> You can deviate from this step and try out your own experiments from our list of experiments provided at Chaos Hub but we would suggest you stick with this tutorial to get a deeper understanding first and later move on to try something yourself.
+
+For the sake of this tutorial we are going to move forward with the `generic/pod-delete` experiment from [Chaos Hub](https://hub.litmuschaos.com).
+
+**Experiment Details:** [https://hub.litmuschaos.io/generic/pod-delete](https://hub.litmuschaos.io/generic/pod-delete)
+
+<br>
+
+**Install the Chaos Experiment using the following command**
 
 ```bash
-kubectl get pods -n litmus
-```
-
-<span style="color:green">**Expected Output:**<span>
-
-```bash
-chaos-operator-ce-<numericId>-<id> 1/1 Running 0
-```
-
-**Verify if chaos CRDs are installed**
-
-```bash
-kubectl get crds | grep chaos
-```
-
-<span style="color:green">**Expected Output:**</span>
-
-```bash
-chaosengines.litmuschaos.io <Creation Timestamp>
-
-chaosexperiments.litmuschaos.io <Creation Timestamp>
-
-chaosresults.litmuschaos.io <Creation Timestamp>
-```
-
-**Verify if the chaos api resources are successfully created in the desired (application) namespace**
-
-```bash
-kubectl api-resources | grep chaos
+kubectl apply -f https://hub.litmuschaos.io/api/chaos/1.7.0?file=charts/generic/pod-delete/experiment.yaml
 ```
 
 <span style="color:green">**Expected Output:**</span>
 
 ```bash
-chaosengines litmuschaos.io true ChaosEngine
+chaosexperiment.litmuschaos.io/pod-delete created
+```
 
-chaosexperiments litmuschaos.io true ChaosExperiment
+**Verify if the chaos experiments are installed**
 
-chaosresults litmuschaos.io true ChaosResult
+```bash
+kubectl get chaosexperiments
+```
+
+<span style="color:green">**Expected Output:**</span>
+
+```bash
+pod-delete   <Creation Timestamp>
 ```

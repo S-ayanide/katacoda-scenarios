@@ -1,63 +1,11 @@
 <br>
 
-## Setup Service Account
+## Annotate your application
 
 <br>
 
-A service account should be created to allow chaosengine to run experiments in your application namespace.
-
-**First let's store the RBAC yaml and update its namespace to the one we are using i.e `nginx`**
+Your application has to be annotated with `litmuschaos.io/chaos="true"`. As a security measure, and also as a means to reduce blast radius the chaos operator checks for this annotation before invoking chaos experiment(s) on the application.
 
 ```bash
-wget https://hub.litmuschaos.io/api/chaos/1.7.0?file=charts/generic/pod-delete/rbac.yaml
-```
-
-**Get the exact name of the yaml file that we just downloaded and rename it to a more friendly one**
-
-```bash
-ls
-```
-
-<span style="color:green">**Expected Output**</span>
-
-```bash
-'1.7.0?file=charts%2Fgeneric%2Fpod-delete%2Frbac.yaml'   Desktop   katacoda-finished
-```
-
-**Rename it**
-
-```bash
-mv 1.7.0?file=charts%2Fgeneric%2Fpod-delete%2Frbac.yaml rbac.yaml
-```
-
-**Open the RBAC to edit all the namepaces and replace them with `nginx`**
-
-```bash
-vi rbac.yaml
-```
-
-**Once the yaml is opened up in Vim Editor, type the following command to replace all the default namespaces with `nginx`**
-
-```bash
-:%s/default/nginx/g
-```
-
-and then save and exit
-
-```bash
-:wq
-```
-
-**Apply the RBAC**
-
-```bash
-kubectl apply -f rbac.yaml
-```
-
-<span style="color:green">**Expected Output**</span>
-
-```bash
-serviceaccount/pod-delete-sa created
-role.rbac.authorization.k8s.io/pod-delete-sa created
-rolebinding.rbac.authorization.k8s.io/pod-delete-sa created
+kubectl annotate deploy/nginx litmuschaos.io/chaos="true"
 ```
