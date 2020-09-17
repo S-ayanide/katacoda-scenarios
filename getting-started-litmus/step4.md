@@ -19,7 +19,7 @@ For the sake of this tutorial we are going to move forward with the `generic/pod
 **Install the Chaos Experiment using the following command**
 
 ```bash
-kubectl apply -f https://hub.litmuschaos.io/api/chaos/1.7.0?file=charts/generic/pod-delete/experiment.yaml
+kubectl apply -f https://hub.litmuschaos.io/api/chaos/1.8.0?file=charts/generic/pod-delete/experiment.yaml
 ```
 
 <span style="color:green">**Expected Output:**</span>

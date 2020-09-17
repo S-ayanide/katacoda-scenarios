@@ -5,7 +5,7 @@
 <br>
 
 ```bash
-kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v1.7.0.yaml
+kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v1.8.0.yaml
 ```
 
 The above command installs all the CRDs, required service account configuration, and chaos-operator.
