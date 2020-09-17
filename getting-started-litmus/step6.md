@@ -9,8 +9,10 @@ ChaosEngine connects the application instance to a Chaos Experiment.
 **Explore the ChaosEngine yaml**
 
 ```bash
-kubectl describe https://hub.litmuschaos.io/api/chaos/1.7.0?file=charts/generic/pod-delete/engine.yaml
+vi https://hub.litmuschaos.io/api/chaos/1.7.0?file=charts/generic/pod-delete/engine.yaml
 ```
+
+Once you are happy with the experiments specified you can use `:q` to exit vim
 
 You can update the values of `applabel` , `appns`, `appkind` and `experiments` as per your experiment requirements and namespaces.
 
