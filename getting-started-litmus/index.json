@@ -8,7 +8,7 @@
 			{
 				"title": "Installing Litmus Operator",
 				"text": "step1.md",
-				"code": "clear_screen.sh"
+				"code": "timer.sh"
 			},
 			{
 				"title": "Verifying the Litmus Installer",
