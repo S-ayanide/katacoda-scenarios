@@ -67,9 +67,4 @@ watch -n 1 kubectl get pods
 nginx-86c57db685-wbdj5    1/1     Running     0          <TimeStamp>
 nginx-chaos-runner        1/1     Running     0          <TimeStamp>
 pod-delete-tkwb3x-9g789   0/1     Completed   0          <TimeStamp>
-pod-delete-tkwb3x-9g789   0/1     Terminating   0        <TimeStamp>
-pod-delete-tkwb3x-9g789   0/1     Terminating   0        <TimeStamp>
-nginx-chaos-runner        0/1     Completed     0        <TimeStamp>
-nginx-chaos-runner        0/1     Terminating   0        <TimeStamp>
-nginx-chaos-runner        0/1     Terminating   0        <TimeStamp>
 ```
