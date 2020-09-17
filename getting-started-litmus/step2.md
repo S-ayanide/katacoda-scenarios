@@ -1,49 +1,32 @@
 <br>
 
-## Verifying the Litmus Installation
+## Apply the LitmuChaos Operator manifest
 
 <br>
 
-**Verify if the chaos operator is running**
-
 ```bash
-kubectl get pods -n litmus
+kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v1.7.0.yaml
 ```
 
-<span style="color:green">**Expected Output:**<span>
+The above command installs all the CRDs, required service account configuration, and chaos-operator.
+
+<span style="color:green">**Expected Output**</span>
 
 ```bash
-chaos-operator-ce-<numericId>-<id> 1/1 Running 0
+namespace/litmus created
+serviceaccount/litmus created
+clusterrole.rbac.authorization.k8s.io/litmus created
+clusterrolebinding.rbac.authorization.k8s.io/litmus created
+deployment.apps/chaos-operator-ce created
+customresourcedefinition.apiextensions.k8s.io/chaosengines.litmuschaos.io created
+customresourcedefinition.apiextensions.k8s.io/chaosexperiments.litmuschaos.io created
+customresourcedefinition.apiextensions.k8s.io/chaosresults.litmuschaos.io created
 ```
 
-**Verify if chaos CRDs are installed**
+Check the available namespaces and see if `litmus` is present or not
 
 ```bash
-kubectl get crds | grep chaos
+kubectl get namespaces
 ```
 
-<span style="color:green">**Expected Output:**</span>
-
-```bash
-chaosengines.litmuschaos.io <Creation Timestamp>
-
-chaosexperiments.litmuschaos.io <Creation Timestamp>
-
-chaosresults.litmuschaos.io <Creation Timestamp>
-```
-
-**Verify if the chaos api resources are successfully created in the desired (application) namespace**
-
-```bash
-kubectl api-resources | grep chaos
-```
-
-<span style="color:green">**Expected Output:**</span>
-
-```bash
-chaosengines litmuschaos.io true ChaosEngine
-
-chaosexperiments litmuschaos.io true ChaosExperiment
-
-chaosresults litmuschaos.io true ChaosResult
-```
+You should be able to see litmus as an active namespace that you just created.

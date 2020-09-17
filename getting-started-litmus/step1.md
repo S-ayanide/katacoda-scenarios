@@ -1,32 +1,33 @@
 <br>
 
-## Apply the LitmuChaos Operator manifest
+## Setting up Nginx
 
 <br>
 
-```bash
-kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v1.7.0.yaml
-```
+We are going to apply Chaos to `nginx` in this scenario. You can apply chaos to any other application but for this scenario we are going to consider `nginx` as the application that we're going to apply chaos on.
 
-The above command installs all the CRDs, required service account configuration, and chaos-operator.
+**Next Let's deploy the nginx app on the default namespace**
+
+```bash
+kubectl create deploy nginx -n nginx --image=nginx
+```
 
 <span style="color:green">**Expected Output**</span>
 
 ```bash
-namespace/litmus created
-serviceaccount/litmus created
-clusterrole.rbac.authorization.k8s.io/litmus created
-clusterrolebinding.rbac.authorization.k8s.io/litmus created
-deployment.apps/chaos-operator-ce created
-customresourcedefinition.apiextensions.k8s.io/chaosengines.litmuschaos.io created
-customresourcedefinition.apiextensions.k8s.io/chaosexperiments.litmuschaos.io created
-customresourcedefinition.apiextensions.k8s.io/chaosresults.litmuschaos.io created
+deployment.apps/nginx created
 ```
 
-Check the available namespaces and see if `litmus` is present or not
+**Verify if the pods are in running state**
 
 ```bash
-kubectl get namespaces
+kubectl get pods --show-labels
 ```
 
-You should be able to see litmus as an active namespace that you just created.
+You should be able to see something similar to this with a different hash attached to your pod label.
+
+<span style="color:green">**Expected Output**</span>
+
+```bash
+nginx-86c57db685-vpr22   1/1   Running   0   3m15s   app=nginx,pod-template-hash=86c57db685
+```

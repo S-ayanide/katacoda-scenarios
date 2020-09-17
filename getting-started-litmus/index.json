@@ -6,38 +6,43 @@
 	"details": {
 		"steps": [
 			{
-				"title": "Installing Litmus Operator",
+				"title": "Setting up application against which chaos would be run",
 				"text": "step1.md",
-				"code": "timer.sh"
+				"code": "clear_screen.sh"
 			},
 			{
-				"title": "Verifying the Litmus Installer",
+				"title": "Installing Litmus Operator",
 				"text": "step2.md",
 				"code": "clear_screen.sh"
 			},
 			{
-				"title": "Installing the Litmus Experiments",
+				"title": "Verifying the Litmus Installer",
 				"text": "step3.md",
 				"code": "clear_screen.sh"
 			},
 			{
-				"title": "Installing RBAC",
+				"title": "Installing the Litmus Experiments",
 				"text": "step4.md",
 				"code": "clear_screen.sh"
 			},
 			{
-				"title": "Annotate your application",
+				"title": "Installing RBAC",
 				"text": "step5.md",
 				"code": "clear_screen.sh"
 			},
 			{
-				"title": "Prepare and Run Chaos",
+				"title": "Annotate your application",
 				"text": "step6.md",
 				"code": "clear_screen.sh"
 			},
 			{
-				"title": "Verify and Observe the results",
+				"title": "Prepare and Run Chaos",
 				"text": "step7.md",
+				"code": "clear_screen.sh"
+			},
+			{
+				"title": "Verify and Observe the results",
+				"text": "step8.md",
 				"code": "clear_screen.sh"
 			}
 		],
