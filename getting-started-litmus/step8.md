@@ -18,7 +18,7 @@ Describe the ChaosResult CR to know the status of each experiment. The `status.v
 
 <br>
 
-> If you receive an `Error from server (NotFound): chaosresults.litmuschaos.io "nginx-chaos-pod-delete" not found` response from the server, wait for a few seconds and try again. It takes a little bit of time for the Chaos Engine to run.
+> If you receive an `Error from server (NotFound): chaosresults.litmuschaos.io "nginx-chaos-pod-delete" not found` response from the server, wait for a minutes and try again. It takes a little bit of time for the Chaos Engine to run.
 
 <span style="color:green">**Expected Output:**</span>
 
@@ -47,18 +47,6 @@ Events:
   Type    Reason   Age   From                     Message
   ----    ------   ----  ----                     -------
   Normal  Summary  2s    pod-delete-e2pdaa-fpwjm  pod-delete experiment has been Passed
-```
-
-<br>
-
-**Check the health of the Pod**
-
-<br>
-
-You can see that pod would have been restarted and Age would be latest time stamp (Since the pod has been restarted due to the chaos experiment)
-
-```bash
-kubectl get pods
 ```
 
 <br>

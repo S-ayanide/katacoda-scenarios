@@ -6,6 +6,8 @@
 
 We are going to apply Chaos to `nginx` in this scenario. You can apply chaos to any other application but for this scenario we are going to consider `nginx` as the application that we're going to apply chaos on.
 
+> You might need to wait for a few seconds to a minute for your dev environment to set up.
+
 **Next Let's deploy the nginx app on the default namespace**
 
 ```bash
