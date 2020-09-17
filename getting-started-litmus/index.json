@@ -7,8 +7,7 @@
 		"steps": [
 			{
 				"title": "Setting up application against which chaos would be run",
-				"text": "step1.md",
-				"code": "clear_screen.sh"
+				"text": "step1.md"
 			},
 			{
 				"title": "Installing Litmus Operator",
