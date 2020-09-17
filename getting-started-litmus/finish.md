@@ -12,6 +12,8 @@ The project is under active development as a [Sandbox project with CNCF](https:/
 
 &nbsp; &nbsp; &nbsp; &nbsp; ✅ Observe the chaos engine exercise your experiments.
 
+**Do let us know how was your experience with Litmus and what are your suggestions on improving the same by filling up [this form](https://docs.google.com/forms/d/e/1FAIpQLScX0s7zKxQPVrjUbFUpNTDkqx2PLOtrCYYTExUuAEoPbHjWhA/viewform)**
+
 > In the last year we've seen Chaos Engineering move from a much talked-about idea to an accepted, mainstream approach to improving and assuring distributed system resilience. As organizations large and small begin to implement Chaos Engineering as an operational process, we're learning how to apply these techniques safely at scale. The approach is definitely not for everyone, and to be effective and safe, it requires organizational support at scale. -- [ThoughtWorks Radar](https://www.thoughtworks.com/radar/techniques/chaos-engineering)
 
 ## References

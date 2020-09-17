@@ -48,3 +48,21 @@ Events:
   ----    ------   ----  ----                     -------
   Normal  Summary  2s    pod-delete-e2pdaa-fpwjm  pod-delete experiment has been Passed
 ```
+
+<br>
+
+**Check the health of the Pod**
+
+<br>
+
+You can see that pod would have been restarted and Age would be latest time stamp (Since the pod has been restarted due to the chaos experiment)
+
+```bash
+kubectl get pods
+```
+
+<br>
+
+_Incase you want to try running chaos on a separate image or namespace, check out the [official documentation](https://docs.litmuschaos.io/docs/getstarted/) and get your chaos experiments up and running in minutes_
+
+<br>
