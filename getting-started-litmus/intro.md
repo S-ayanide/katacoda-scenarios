@@ -21,6 +21,13 @@ Litmus takes a cloud-native approach to create, manage and monitor chaos. Chaos 
 -   **ChaosExperiment**: A resource to group the configuration parameters of a chaos experiment. ChaosExperiment CRs are created by the operator when experiments are invoked by ChaosEngine.
 -   **ChaosResult**: A resource to hold the results of a chaos-experiment. The Chaos-exporter reads the results and exports the metrics into a configured Prometheus server.
 
+## **LitmusChaos is one of the better chaos engineering toolsets for Kubernetes because:**
+
+-   Litmus provides chaos CRDs to manage chaos. Using chaos API, orchestration, scheduling and complex workflow management can be done declaratively.
+-   Most of the generic chaos experiments are readily available for you to get started with your initial chaos engineering needs.
+-   SDK is available in GO, Python and Ansible. A basic experiment structure is created quickly using SDK and developers and SREs just need to add the chaos logic into to make a new experiment.
+-   Simple to complex chaos workflows are easy to construct. Use GitOps and the chaos workflows to scale your chaos engineering efforts and increase the resilience of your Kubernetes platform.
+
 ## **In this scenario you will learn how to:**
 
 -   Setup and install Litmus onto Kubernetes.
@@ -35,5 +42,3 @@ Litmus takes a cloud-native approach to create, manage and monitor chaos. Chaos 
 [!<img src = 'https://i.ibb.co/1sB5hwY/maxresdefault.jpg' width='400'/>](https://youtu.be/W5hmNbaYPfM)
 
 <br>
-
-<span style="color:green"> **-- MayaData Inc**</span>

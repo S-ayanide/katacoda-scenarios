@@ -23,5 +23,3 @@ The project is under active development as a [Sandbox project with CNCF](https:/
 -   [Learn more about our Source Code](https://github.com/litmuschaos/litmus)
 -   [Principles of Chaos Engineering](http://principlesofchaos.org/)
 -   [Check out all our experiments](https://hub.litmuschaos.io)
-
-<span style="color:green"> **-- MayaData Inc**</span>
