@@ -53,7 +53,9 @@
 		}
 	},
 	"environment": {
-		"uilayout": "terminal"
+		"uilayout": "terminal",
+		"uimessage1": "\u001b[32mWelcome To LitmusChaos Scenario.\u001b[m\r\n",
+		"icon": "fa-kubernetes"
 	},
 	"backend": {
 		"imageid": "minikube-running"
