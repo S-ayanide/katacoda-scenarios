@@ -20,9 +20,7 @@ deployment.apps/nginx created
 
 **Verify if the pods are in running state**
 
-```bash
-kubectl get pods --show-labels
-```
+`kubectl get pods --show-labels`{{execute}}
 
 You should be able to see something similar to this with a different hash attached to your pod label.
 

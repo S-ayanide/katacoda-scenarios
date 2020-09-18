@@ -10,9 +10,7 @@
 
 <span style="color:green">ChaosResult CR name will be `<chaos-engine-name>-<chaos-experiment-name>`</span>
 
-```bash
-kubectl describe chaosresult nginx-chaos-pod-delete
-```
+`kubectl describe chaosresult nginx-chaos-pod-delete`{{execute}}
 
 Describe the ChaosResult CR to know the status of each experiment. The `status.verdict` is set to `Awaited` when the experiment is in progress, eventually changing to either `Pass` or `Fail`.
 

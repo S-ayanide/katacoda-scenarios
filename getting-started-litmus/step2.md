@@ -4,9 +4,7 @@
 
 <br>
 
-```bash
-kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v1.8.0.yaml
-```
+`kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v1.8.0.yaml`{{execute}}
 
 The above command installs all the CRDs, required service account configuration, and chaos-operator.
 
@@ -25,8 +23,6 @@ customresourcedefinition.apiextensions.k8s.io/chaosresults.litmuschaos.io create
 
 Check the available namespaces and see if `litmus` is present or not
 
-```bash
-kubectl get namespaces
-```
+`kubectl get namespaces`{{execute}}
 
 You should be able to see litmus as an active namespace that you just created.

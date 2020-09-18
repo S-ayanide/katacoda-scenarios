@@ -8,9 +8,7 @@ A service account should be created to allow chaosengine to run experiments in y
 
 **Apply the RBAC**
 
-```bash
-kubectl apply -f https://hub.litmuschaos.io/api/chaos/1.8.0?file=charts/generic/pod-delete/rbac.yaml
-```
+`kubectl apply -f https://hub.litmuschaos.io/api/chaos/1.8.0?file=charts/generic/pod-delete/rbac.yaml`{{execute}}
 
 <span style="color:green">**Expected Output**</span>
 

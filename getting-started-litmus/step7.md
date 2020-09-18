@@ -10,9 +10,7 @@
 
 You would only be able to see the `nginx` pod in running state.
 
-```bash
-kubectl get pods
-```
+`kubectl get pods`{{execute}}
 
 <span style="color:green">**Expected Output:**</span>
 
@@ -34,9 +32,7 @@ Explore the ChaosEngine yaml [https://hub.litmuschaos.io/generic/pod-delete](htt
 
 **Apply the ChaosEngine manifest to trigger the experiment.**
 
-```bash
-kubectl apply -f https://hub.litmuschaos.io/api/chaos/1.8.0?file=charts/generic/pod-delete/engine.yaml
-```
+`kubectl apply -f https://hub.litmuschaos.io/api/chaos/1.8.0?file=charts/generic/pod-delete/engine.yaml`{{execute}}
 
 <span style="color:green">**Expected Output:**</span>
 
@@ -57,9 +53,7 @@ You would be able to see that two new pods
 
 would be created and age would be the latest time stamp. You'd be able to see the status of the pods changing from `Running` to `ContainerCreating` to `Completed` to`Terminating` based on the chaos applied.
 
-```bash
-watch -n 1 kubectl get pods
-```
+`watch -n 1 kubectl get pods`{{execute}}
 
 <span style="color:green">**Expected Output:**</span>
 
