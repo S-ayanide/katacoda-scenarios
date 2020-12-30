@@ -1,0 +1,63 @@
+{
+	"title": "Container Kill",
+	"description": "Kill one container in the application pod",
+	"difficulty": "Beginner",
+	"time": "15 minutes",
+	"details": {
+		"steps": [
+			{
+				"title": "Setting up application against which chaos would be run",
+				"text": "step1.md"
+			},
+			{
+				"title": "Installing Litmus Operator",
+				"text": "step2.md",
+				"code": "clear_screen.sh"
+			},
+			{
+				"title": "Verifying the Litmus Installer",
+				"text": "step3.md",
+				"code": "clear_screen.sh"
+			},
+			{
+				"title": "Installing the Container kill Experiment",
+				"text": "step4.md",
+				"code": "clear_screen.sh"
+			},
+			{
+				"title": "Installing RBAC",
+				"text": "step5.md",
+				"code": "clear_screen.sh"
+			},
+			{
+				"title": "Annotate your application",
+				"text": "step6.md",
+				"code": "clear_screen.sh"
+			},
+			{
+				"title": "Prepare, Tune and Run Chaos",
+				"text": "step7.md",
+				"code": "clear_screen.sh"
+			},
+			{
+				"title": "Verify and Observe the results",
+				"text": "step8.md",
+				"code": "clear_screen.sh"
+			}
+		],
+		"intro": {
+			"text": "intro.md"
+		},
+		"finish": {
+			"text": "finish.md"
+		}
+	},
+	"environment": {
+		"uilayout": "terminal",
+		"uimessage1": "\u001b[32mWelcome To LitmusChaos Container-Kill Scenario.\u001b[m\r\n",
+		"icon": "fa-kubernetes"
+	},
+	"backend": {
+		"imageid": "minikube-running"
+	}
+}
