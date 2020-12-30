@@ -85,3 +85,7 @@ nginx-86c57db685-wbdj5    1/1     Running     0          <TimeStamp>
 nginx-chaos-runner        1/1     Running     0          <TimeStamp>
 container-kill-e2pdaa-fpwjm   0/1     Completed   0          <TimeStamp>
 ```
+
+**Keep a check on the restart count**
+
+Each time the container-kill executes your container(`nginx-86c57db685-wbdj5` in this case) would go down and restart back up if it is resilient enough. Keep a check on the number of times the container is restarted and note the state transition from `Error` to `Running`.
