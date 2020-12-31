@@ -60,3 +60,7 @@ Events:
 _Incase you want to try running chaos on a separate image or namespace, check out the [official documentation](https://docs.litmuschaos.io/docs/getstarted/) and get your chaos experiments up and running in minutes_
 
 <br>
+
+## <span style="color:green">**Congratulations! You have successfully executed your chaos experiment with Litmus**</span>
+
+**Click on Continue to Finish this Scenario**
