@@ -2,17 +2,17 @@
 # Scraping the latest version of litmus
 
 curl=$(which curl)
-url="https://raw.githubusercontent.com/litmuschaos/litmus/master/litmus-portal/README.md"
+url="https://docs.litmuschaos.io/docs/getstarted/"
 version=""
 command=""
 
 function extract_version() {
-	version=$($curl $url | grep "https://raw.githubusercontent.com/litmuschaos/litmus/v" | sed 's/[/]/\n/g' | sed -n '6p')
+	version=$($curl $url | grep "content" | sed 's/[content="]/\n/g' | sed -n '156p')
 	version_error_check
 }
 
 function apply_command() {
-	command="https://litmuschaos.github.io/litmus/litmus-operator-${version}.yaml"
+	command="https://litmuschaos.github.io/litmus/litmus-operator-v${version}.yaml"
 	command_error_check
 }
 
