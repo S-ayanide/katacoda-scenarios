@@ -4,6 +4,16 @@
 
 <br>
 
+You can download the command to apply the latest manifest version by executing
+
+`./latest_version.sh > apply.txt`{{execute}}
+
+This will download the latest apply command locally and you can use this to apply the latest manifest
+
+`kubectl apply -f < ?bash cat apply.txt ;? >`{{execute}}
+
+Or you can directly use this command, but the version is a static example one
+
 `kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v1.11.0.yaml`{{execute}}
 
 The above command installs all the CRDs, required service account configuration, and chaos-operator.
