@@ -6,6 +6,8 @@
 
 You can download the command to apply the latest manifest version by executing
 
+`wget https://raw.githubusercontent.com/S-ayanide/katacoda-scenarios/master/container-kill/latest_version.sh | chmod +x latest_version.sh`{{execute}}
+
 `./latest_version.sh > apply.txt`{{execute}}
 
 This will download the latest apply command locally and you can use this to apply the latest manifest
