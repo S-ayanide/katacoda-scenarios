@@ -10,7 +10,11 @@ You can download the command to apply the latest manifest version by executing
 
 This will download the latest apply command locally and you can use this to apply the latest manifest
 
-`kubectl apply -f $cat apply.txt`{{execute}}
+<span style="color:green">
+```bash
+kubectl apply -f `cat apply.txt`
+```
+</span>
 
 Or you can directly use this command, but the version is a static example one
 
