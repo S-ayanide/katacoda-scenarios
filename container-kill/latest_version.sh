@@ -26,6 +26,6 @@ function command_error_check() {
 
 extract_version
 apply_command
-echo $command
+echo $version
 
 #END

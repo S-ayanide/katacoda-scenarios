@@ -6,15 +6,13 @@
 
 You can download the command to apply the latest manifest version by executing
 
-`wget https://raw.githubusercontent.com/S-ayanide/katacoda-scenarios/master/container-kill/latest_version.sh && chmod +x latest_version.sh && ./latest_version.sh > apply.txt`{{execute}}
+`wget https://raw.githubusercontent.com/S-ayanide/katacoda-scenarios/master/container-kill/latest_version.sh && chmod +x latest_version.sh && ./latest_version.sh > version.txt`{{execute}}
 
 This will download the latest apply command locally and you can use this to apply the latest manifest
 
-<span style="color:green">
 ```bash
-kubectl apply -f `cat apply.txt`
+kubectl apply -f https://litmuschaos.github.io/litmus/litmus-operator-v`cat version.txt`.yaml
 ```
-</span>
 
 Or you can directly use this command, but the version is a static example one
 

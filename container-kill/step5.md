@@ -10,11 +10,15 @@ This RBAC consists of the minimum necessary role permissions to execute the expe
 
 **Apply the RBAC**
 
-`kubectl apply -f https://hub.litmuschaos.io/api/chaos/1.11.1?file=charts/generic/container-kill/rbac.yaml`{{execute}}
+```bash
+kubectl apply -f https://hub.litmuschaos.io/api/chaos/`cat version.txt`?file=charts/generic/container-kill/rbac.yaml
+```
 
 To customize or download the yaml use the RBAC link below:
 
-`https://hub.litmuschaos.io/api/chaos/1.11.1?file=charts/generic/container-kill/rbac.yaml`{{execute}}
+```bash
+https://hub.litmuschaos.io/api/chaos/`cat version.txt`?file=charts/generic/container-kill/rbac.yaml
+```
 
 <span style="color:green">**Expected Output**</span>
 

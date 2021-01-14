@@ -55,7 +55,9 @@ Explore the ChaosEngine yaml [https://hub.litmuschaos.io/api/chaos/1.11.1?file=c
 
 **Apply the ChaosEngine manifest to trigger the experiment.**
 
-`kubectl apply -f https://hub.litmuschaos.io/api/chaos/1.11.1?file=charts/generic/container-kill/engine.yaml`{{execute}}
+```bash
+kubectl apply -f https://hub.litmuschaos.io/api/chaos/`cat version.txt`?file=charts/generic/container-kill/engine.yaml
+```
 
 <span style="color:green">**Expected Output:**</span>
 
