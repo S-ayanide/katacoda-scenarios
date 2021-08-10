@@ -1,6 +1,6 @@
 {
-	"title": "Container Kill",
-	"description": "Kill one container in the application pod",
+	"title": "Pod Autoscaler",
+	"description": "The Horizontal Pod Autoscaler automatically scales the number of Pods in a replication controller, deployment, replica set or stateful set based on observed CPU utilization",
 	"difficulty": "Beginner",
 	"time": "15 minutes",
 	"details": {

@@ -1,8 +1,8 @@
 {
-	"title": "Getting Started with Litmus",
-	"description": "Running chaos on your application using LitmusChaos",
+	"title": "Deploying Litmus 2.0",
+	"description": "Deploy Litmus 2.0 into a Kubernetes Cluster",
 	"difficulty": "Beginner",
-	"time": "15 minutes",
+	"time": "5 minutes",
 	"details": {
 		"steps": [
 			{

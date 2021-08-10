@@ -1,6 +1,6 @@
 <br>
 
-<img align='right' src={require("../assets/litmus-logo.png").default} alt="Litmus Logo" width="120" />
+<img align='right' src={https://avatars.githubusercontent.com/u/49853472?s=200&v=4} alt="Litmus Logo" width="120" />
 
 LitmusChaos is a Cloud-Native Chaos Engineering Framework with cross-cloud support. It is a CNCF Sandbox project with adoption across several organizations. Its mission is to help Kubernetes SREs and Developers to find weaknesses in both Non-Kubernetes as well as platforms and applications running on Kubernetes by providing a complete Chaos Engineering framework and associated Chaos Experiments.
 
@@ -10,14 +10,12 @@ Litmus can be used to run chaos experiments initially in the staging environment
 
 ---
 
-## **In this scenario you will learn how to:**
+## In this scenario you will learn how to:
 
 - Deploy Litmus 2.0 into a Kubernetes Cluster.
   - Via kubectl
   - Via Helm
 - Access the ChaosCenter post installation
-
-<br>
 
 ## ChaosCenter
 
@@ -31,6 +29,6 @@ Over time, with the monthly cadence releases and community engagement, we have a
 
 <br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hcPvbDSPdeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="560" src="https://www.youtube.com/embed/hcPvbDSPdeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
