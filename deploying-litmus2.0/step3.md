@@ -30,7 +30,7 @@ litmusportal-frontend-service   NodePort    10.101.81.70     <none>        9091:
 litmusportal-server-service     NodePort    10.108.151.79    <none>        9002:32456/TCP,9003:31160/TCP   2m
 ```
 
-> **Note:** In this case, the PORT for litmusportal-frontend-service is 30385. Yours will be different.
+> **Note:** In this case, the PORT for litmusportal-frontend-service is `30385`. Yours will be different.
 
 Extract the IP, in this case we are on a minikube cluster so simple execute
 `minikube ip`{{execute}}

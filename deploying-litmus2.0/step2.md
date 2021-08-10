@@ -1,5 +1,10 @@
 <br>
 
+:::note
+Please wait for helm to get installed in the Katacoda environment before proceeding.
+if you see the message `Error: could not find a ready tiller pod` please wait for a few seconds and try again, typically it requires a few seconds for Katacoda to set up Tiller.
+:::
+
 ### Add the litmus helm repository
 
 `helm repo add litmuschaos https://litmuschaos.github.io/litmus-helm/`{{execute}}

@@ -1,8 +1,10 @@
 <br>
 
-:::note
-You might need to wait for a few seconds to a minute for your dev environment to set up. Typically it requires around 1 minute or less for Katacoda to set up the cloud environment.
-:::
+---
+
+**NOTE**
+
+## You might need to wait for a few seconds to a minute for your dev environment to set up. Typically it requires around 1 minute or less for Katacoda to set up the cloud environment.
 
 ### Install Litmus ChaosCenter in your cluster
 
