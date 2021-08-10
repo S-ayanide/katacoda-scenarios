@@ -29,6 +29,12 @@ Over time, with the monthly cadence releases and community engagement, we have a
 
 <br>
 
-<iframe width="560" height="800" src="https://www.youtube.com/embed/hcPvbDSPdeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<table>
+  <tr>
+    <td>
+      <iframe src="https://www.youtube.com/embed/hcPvbDSPdeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+    </td>
+  </tr>
+</table>
 
 <br>
