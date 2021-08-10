@@ -27,8 +27,6 @@ Over time, with the monthly cadence releases and community engagement, we have a
 
 ## **An Overview of Litmus 2.0** 📹
 
-<br>
-
 <table>
   <tr>
     <td>
