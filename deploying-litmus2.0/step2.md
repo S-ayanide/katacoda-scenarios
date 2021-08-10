@@ -2,31 +2,25 @@
 
 ### Add the litmus helm repository
 
-```bash
-helm repo add litmuschaos https://litmuschaos.github.io/litmus-helm/
-```
+`helm repo add litmuschaos https://litmuschaos.github.io/litmus-helm/`{{execute}}
 
 > You can check the `litmuschaos` repository by running `helm repo list`
 
-### Create the namespace on which you want to install Litmus ChaosCenter#
+### Create the namespace on which you want to install Litmus ChaosCenter
 
 The litmus infra components will be placed in this namespace.
 
 > The ChaosCenter can be placed in any namespace, but for this scenario we are choose `litmus` as the namespace.
 
-```bash
-kubectl create ns litmus
-```
+`kubectl create ns litmus`{{execute}}
 
 ### Install Litmus ChaosCenter
 
-```bash
-helm install chaos litmuschaos/litmus-2-0-0-beta --namespace=litmus --devel
-```
+`helm install --name chaos litmuschaos/litmus-2-0-0-beta --namespace=litmus --devel`{{execute}}
 
 <span style={{color: 'green'}}><b>Expected Output</b></span>
 
-```
+```bash
 NAME: chaos
 LAST DEPLOYED: Tue Jun 15 19:20:09 2021
 NAMESPACE: litmus
@@ -49,11 +43,9 @@ Once all the CRDs are applied you can verify the installation by
 
 - Checking the pods in the namespace where you installed Litmus:
 
-  ```bash
-  watch kubectl get pods -n litmus
-  ```
+  `watch kubectl get pods -n litmus`{{execute}}
 
-  <span style={{color: 'green'}}><b>Expected Output</b></span>
+  <span style={{color: 'green'}}>**Expected Output**</span>
 
   ```bash
   NAME                                    READY   STATUS  RESTARTS  AGE
@@ -64,11 +56,9 @@ Once all the CRDs are applied you can verify the installation by
 
 - Checking the services running in the namespace where you installed Litmus:
 
-  ```bash
-  kubectl get svc -n litmus
-  ```
+  `kubectl get svc -n litmus`{{execute}}
 
-  <span style={{color: 'green'}}><b>Expected Output</b></span>
+  <span style={{color: 'green'}}>**Expected Output**</span>
 
   ```bash
   NAME                            TYPE        CLUSTER-IP      EXTERNAL-IP PORT(S)                       AGE
@@ -76,13 +66,3 @@ Once all the CRDs are applied you can verify the installation by
   litmusportal-server-service     NodePort    10.100.150.175  <none>      9002:30479/TCP,9003:31949/TCP 7m8s
   mongo-service                   ClusterIP   10.100.226.179  <none>      27017/TCP                     7m6s
   ```
-
-Render port 8500: https://[[HOST_SUBDOMAIN]]-8500-[[KATACODA_HOST]].environments.katacoda.com/
-
-Render port 80: https://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/
-
-Display page allowing user to select port: https://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com/
-
-```
-curl https://raw.githubusercontent.com/helm/helm/master/scripts/get | bash
-```

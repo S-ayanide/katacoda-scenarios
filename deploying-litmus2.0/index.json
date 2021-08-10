@@ -13,6 +13,11 @@
 				"title": "Deploy Litmus 2.0 using helm",
 				"text": "step2.md",
 				"code": "installHelm.sh"
+			},
+			{
+				"title": "Accessing the ChaosCenter",
+				"text": "step3.md",
+				"code": "extract.sh"
 			}
 		],
 		"intro": {
