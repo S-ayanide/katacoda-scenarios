@@ -8,5 +8,4 @@ done
 
 IP="$(minikube ip)"
 FrontendServiceNodePort="$(kubectl describe svc litmusportal-frontend-service -n $Namespace | grep NodePort: | grep -oE "[[:digit:]]{1,}")"
-ChaosCenter="$IP:$FrontendServiceNodePort"
-expose $ChaosCenter
+export ChaosCenter="$IP:$FrontendServiceNodePort"
