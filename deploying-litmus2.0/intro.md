@@ -1,6 +1,6 @@
 <br>
 
-<img align='right' src={https://avatars.githubusercontent.com/u/49853472?s=200&v=4} alt="Litmus Logo" width="120" />
+<img align='right' src="https://avatars.githubusercontent.com/u/49853472?s=200&v=4" alt="Litmus Logo" width="120" />
 
 LitmusChaos is a Cloud-Native Chaos Engineering Framework with cross-cloud support. It is a CNCF Sandbox project with adoption across several organizations. Its mission is to help Kubernetes SREs and Developers to find weaknesses in both Non-Kubernetes as well as platforms and applications running on Kubernetes by providing a complete Chaos Engineering framework and associated Chaos Experiments.
 
