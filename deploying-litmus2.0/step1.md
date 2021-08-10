@@ -12,7 +12,7 @@ Once all the CRDs are applied you can verify the installation by
 
   `watch kubectl get pods -n litmus`{{execute}}
 
-  <span style={{color: 'green'}}>**Expected Output**</span>
+  <span style="color:green">**Expected Output**</span>
 
   ```bash
   NAME                                    READY   STATUS  RESTARTS  AGE
@@ -25,7 +25,7 @@ Once all the CRDs are applied you can verify the installation by
 
   `kubectl get svc -n litmus`{{execute}}
 
-  <span style={{color: 'green'}}>**Expected Output**</span>
+  <span style="color:green">**Expected Output**</span>
 
   ```bash
   NAME                            TYPE        CLUSTER-IP      EXTERNAL-IP PORT(S)                       AGE
