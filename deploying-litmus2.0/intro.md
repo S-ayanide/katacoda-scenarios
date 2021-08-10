@@ -1,44 +1,36 @@
 <br>
 
-<h1 align="center">
-  <img src="https://raw.githubusercontent.com/litmuschaos/website-litmuschaos/staging/src/images/LitmusLogo.png" alt="LitmusChaos" width="200">
-</h1>
+<img align='right' src={require("../assets/litmus-logo.png").default} alt="Litmus Logo" width="120" />
 
-<br>
+LitmusChaos is a Cloud-Native Chaos Engineering Framework with cross-cloud support. It is a CNCF Sandbox project with adoption across several organizations. Its mission is to help Kubernetes SREs and Developers to find weaknesses in both Non-Kubernetes as well as platforms and applications running on Kubernetes by providing a complete Chaos Engineering framework and associated Chaos Experiments.
 
-## **Getting Started with Litmus** 😮😎
+Litmus can be used to run chaos experiments initially in the staging environment and eventually in production to find bugs and vulnerabilities, fixing which leads to an increased resilience of the system. Litmus adopts a `Kubernetes-native` approach to define chaos intent in a declarative manner via custom resources.
 
-Litmus is a toolset to do cloud-native chaos engineering. Litmus provides tools to orchestrate chaos on Kubernetes to help SREs find weaknesses in their deployments. SREs use Litmus to run chaos experiments initially in the staging environment and eventually in production to find bugs, vulnerabilities. Fixing the weaknesses leads to increased resilience of the system.
-
-<br>
+<br/>
 
 ---
 
-<br>
-Litmus takes a cloud-native approach to create, manage and monitor chaos. Chaos is orchestrated using the following Kubernetes Custom Resource Definitions (**CRDs**):
-
--   **ChaosEngine**: A resource to link a Kubernetes application or Kubernetes node to a ChaosExperiment. ChaosEngine is watched by Litmus' Chaos-Operator which then invokes Chaos-Experiments
--   **ChaosExperiment**: A resource to group the configuration parameters of a chaos experiment. ChaosExperiment CRs are created by the operator when experiments are invoked by ChaosEngine.
--   **ChaosResult**: A resource to hold the results of a chaos-experiment. The Chaos-exporter reads the results and exports the metrics into a configured Prometheus server.
-
-## **You should use Litmus because:**
-
--   Litmus provides chaos CRDs to manage chaos. Using chaos API, orchestration, scheduling and complex workflow management can be done declaratively.
--   Most of the generic chaos experiments are readily available for you to get started with your initial chaos engineering needs.
--   SDK is available in GO, Python and Ansible. A basic experiment structure is created quickly using SDK and developers and SREs just need to add the chaos logic into to make a new experiment.
--   Simple to complex chaos workflows are easy to construct. Use GitOps and the chaos workflows to scale your chaos engineering efforts and increase the resilience of your Kubernetes platform.
-
 ## **In this scenario you will learn how to:**
 
--   Setup and install Litmus onto Kubernetes.
--   Install Litmus experiments, RBAC and prepare the Chaos Engine.
--   Deliver chaos experiments.
--   Observe the chaos engine exercise your experiments.
-
-## **Run your first chaos experiment** 📹
+- Deploy Litmus 2.0 into a Kubernetes Cluster.
+  - Via kubectl
+  - Via Helm
+- Access the ChaosCenter post installation
 
 <br>
 
-[!<img src = 'https://i.ibb.co/1sB5hwY/maxresdefault.jpg' width='400'/>](https://youtu.be/W5hmNbaYPfM)
+## ChaosCenter
+
+The ChaosCenter is a single source of truth to control all the different Chaos Activities happening around Litmus and it comes pre-packaged with the installation. From the ChaosCenter you get the freedom to manage every single part of Litmus and shape your workflows exactly the way you want it.
+
+## Advantages of Litmus 2.0
+
+Over time, with the monthly cadence releases and community engagement, we have added a lot of features and made LitmusChaos much easier for the end-users. With the launch of Litmus 2.0, a new way of chaos engineering can be performed by the users, a few high-level features are mentioned [here](https://litmusdocs-beta.netlify.app/docs/next/introduction/features)
+
+## **An Overview of Litmus 2.0** 📹
+
+<br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hcPvbDSPdeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>

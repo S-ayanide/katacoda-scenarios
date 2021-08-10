@@ -6,8 +6,13 @@
 	"details": {
 		"steps": [
 			{
-				"title": "Setting up application against which chaos would be run",
+				"title": "Deploy Litmus 2.0 using kubectl",
 				"text": "step1.md"
+			},
+			{
+				"title": "Deploy Litmus 2.0 using helm",
+				"text": "step2.md",
+				"code": "installHelm.sh"
 			}
 		],
 		"intro": {

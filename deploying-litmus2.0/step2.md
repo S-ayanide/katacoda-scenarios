@@ -1,10 +1,47 @@
 <br>
 
-### Install Litmus ChaosCenter in your cluster
+### Add the litmus helm repository
 
 ```bash
-kubectl apply -f https://litmuschaos.github.io/litmus/2.0.0-Beta/litmus-2.0.0-Beta.yaml
+helm repo add litmuschaos https://litmuschaos.github.io/litmus-helm/
 ```
+
+> You can check the `litmuschaos` repository by running `helm repo list`
+
+### Create the namespace on which you want to install Litmus ChaosCenter#
+
+The litmus infra components will be placed in this namespace.
+
+> The ChaosCenter can be placed in any namespace, but for this scenario we are choose `litmus` as the namespace.
+
+```bash
+kubectl create ns litmus
+```
+
+### Install Litmus ChaosCenter
+
+```bash
+helm install chaos litmuschaos/litmus-2-0-0-beta --namespace=litmus --devel
+```
+
+<span style={{color: 'green'}}><b>Expected Output</b></span>
+
+```
+NAME: chaos
+LAST DEPLOYED: Tue Jun 15 19:20:09 2021
+NAMESPACE: litmus
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+Thank you for installing litmus-2-0-0-beta 😀
+
+Your release is named chaos and its installed to namespace: litmus.
+
+Visit https://docs.litmuschaos.io/docs/getstarted/ to find more info.
+```
+
+> Litmus uses Kubernetes CRDs to define chaos intent. Helm3 handles CRDs better than Helm2. Before you start running a chaos experiment, verify if Litmus is installed correctly.
 
 ### Verify Your Installation
 
