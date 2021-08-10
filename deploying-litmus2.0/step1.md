@@ -1,5 +1,9 @@
 <br>
 
+:::note
+You might need to wait for a few seconds to a minute for your dev environment to set up. Typically it requires around 1 minute or less for Katacoda to set up the cloud environment.
+:::
+
 ### Install Litmus ChaosCenter in your cluster
 
 `kubectl apply -f https://litmuschaos.github.io/litmus/2.0.0-Beta/litmus-2.0.0-Beta.yaml`{{execute}}

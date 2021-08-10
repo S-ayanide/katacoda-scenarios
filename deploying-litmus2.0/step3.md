@@ -4,7 +4,7 @@ To setup and login to ChaosCenter expand the available services just created and
 
 Once you have the PORT copied in your clipboard, simply use your `IP` and `PORT` in this manner `<NODEIP>:<PORT>` to access the Litmus ChaosCenter.
 
-**In this scenario we have already done that for you and you can simply use the URL provided on the terminal to the right to access the ChaosCenter.**
+**In this scenario we have already done that for you and you can simply use the PORT provided on the terminal to the right to access the ChaosCenter by visiting the Dashboard Panel and entering the PORT in the `Display Port` section**
 
 ## Credentials for ChaosCenter
 
