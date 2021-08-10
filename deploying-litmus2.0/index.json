@@ -17,7 +17,7 @@
 			{
 				"title": "Accessing the ChaosCenter",
 				"text": "step3.md",
-				"background": "extract.sh ; source extract.sh"
+				"code": "extract.sh | source extract.sh"
 			}
 		],
 		"intro": {
