@@ -3,7 +3,7 @@
 until kubectl config view | grep -m 1 "http"; do echo "Waiting for Kubernetes to setup" && sleep 15 ; done
 echo "Please wait for a minute while we install all the necessary services"
 
-sleep 30
+sleep 40
 kubectl apply -f https://raw.githubusercontent.com/litmuschaos/litmus/2.5.0/mkdocs/docs/2.5.0/litmus-2.5.0.yaml
 sleep 5
 kubectl apply -f https://raw.githubusercontent.com/litmuschaos/test-tools/master/custom/workflow-helper/app-deployer/app-manifest/resilient-podtato-head.yaml
