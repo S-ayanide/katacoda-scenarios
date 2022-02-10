@@ -9,3 +9,6 @@ kubectl apply -f https://raw.githubusercontent.com/litmuschaos/test-tools/master
 sleep 5
 clear
 echo "Installing Litmus 2.0 and Podtato Head"
+sleep 5
+FrontendServiceNodePort="$(kubectl describe svc litmusportal-frontend-service -n litmus | grep NodePort: | grep -oE "[[:digit:]]{1,}")"
+echo "ChaosCenter is available at PORT $FrontendServiceNodePort"
