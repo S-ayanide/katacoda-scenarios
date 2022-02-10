@@ -1,0 +1,33 @@
+{
+  "title": "Deploying Litmus 2.0 with Podtato Head",
+  "description": "Deploy Litmus 2.0 with Podtato Head into a Kubernetes Cluster, a part of Litmus Chaos Practitioner Certification course",
+  "difficulty": "Beginner",
+  "time": "2 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Accessing the ChaosCenter",
+        "text": "step1.md",
+        "code": "deploy.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboard": "Dashboard",
+    "uilayout": "terminal-iframe",
+    "hideintro": false,
+    "hidefinish": false,
+    "uimessage1": "\u001b[32mWelcome To LitmusChaos Scenario.\u001b[m\r\n",
+    "icon": "fa-kubernetes"
+  },
+  "backend": {
+    "imageid": "minikube-running"
+  }
+}
