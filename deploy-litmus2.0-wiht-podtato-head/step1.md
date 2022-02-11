@@ -20,6 +20,8 @@ Incase something goes wrong, you can always use these commands to access the Cha
 
 `kubectl describe svc litmusportal-frontend-service -n litmus | grep NodePort: | grep -oE "[[:digit:]]{1,}"`{{execute}}
 
+> Incase you are unable to login, check if the litmusportal server pod is up and running using `kubectl get pods -n litmus`. Once it is in the Running state you should be able to Login
+
 ## Credentials for ChaosCenter
 
 You should be able to see the Login Page of Litmus ChaosCenter. The default credentials are
