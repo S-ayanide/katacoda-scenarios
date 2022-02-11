@@ -6,6 +6,20 @@ Once you have the PORT copied in your clipboard, simply navigate to `Dashboard` 
 
 **In this scenario we have already done that for you and you can simply use the PORT provided on the terminal to the right to access the ChaosCenter by visiting the Dashboard Panel and entering the PORT in the `Display Port` section**
 
+Incase something goes wrong, you can always use these commands to access the ChaosCenter:
+
+<span style="color:brown">**Install Litmus**</span>
+
+`kubectl apply -f https://raw.githubusercontent.com/litmuschaos/litmus/2.5.0/mkdocs/docs/2.5.0/litmus-2.5.0.yaml`{{execute}}
+
+<span style="color:brown">**Install Podtato Head**</span>
+
+`kubectl apply -f https://raw.githubusercontent.com/litmuschaos/test-tools/master/custom/workflow-helper/app-deployer/app-manifest/resilient-podtato-head.yaml -n litmus`{{execute}}
+
+<span style="color:brown">**Extract the PORT**</span>
+
+`kubectl describe svc litmusportal-frontend-service -n litmus | grep NodePort: | grep -oE "[[:digit:]]{1,}"`{{execute}}
+
 ## Credentials for ChaosCenter
 
 You should be able to see the Login Page of Litmus ChaosCenter. The default credentials are
@@ -15,7 +29,7 @@ Username: admin
 Password: litmus
 ```
 
-### To do the step manually
+### Manually check the PORT
 
 Expand your service using
 
